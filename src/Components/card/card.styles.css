@@ -1,0 +1,37 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background: #658dc621;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 25px;
+    align-items: center;
+    width: 300px;
+    height: fit-content;
+    margin: 50px auto;
+    box-shadow: 5px 5px 18px -1px 658dc6;
+}
+
+.card-container:hover{
+    transform: scale(1.05);
+}
+
+.card-container p{
+    color: white;
+    padding: 5px 0px;
+}
+
+@media screen and (max-width: 1070px) {
+    .card-list{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-list{
+        grid-template-columns: 1fr;
+        margin: 20px 15px;
+        padding: auto;
+    }
+  }
